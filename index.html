@@ -1,0 +1,133 @@
+<!-- This tells the browser that it is HTML5-->
+<!DOCTYPE html>
+<!--This wraps everything-->
+<html lang="en">
+<!--This (<head>) contains metadata that is not visible on page.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!--This contains visible content.-->
+    <h>Learn HTML in HTML</h>
+    <br>
+    <nav>
+        <a href="https://www.istockphoto.com/bot-wall?returnUrl=%2Fphotos%2Fpanda">
+            Pictures of cute pandas.</a>
+    </nav>
+    <img src="/images/PANDA.jpeg" height="200" width="600" alt="The image is an adorable panda that
+    is AI generated. It is not real. This is a fake panda.
+    This panda is not conscious.">
+    <h3>Some overview</h3>
+    <p>Learning HTML is <em>really, really easy.</em> All you really need to know
+        is the gist of what syntax to use, and VS code (or any other smart IDEs,) will
+        autocomplete the rest of the syntax for you! For example, if I want a paragraph,
+        I just utilize the tag that structure web content, and let's say I want a paragraph.
+        Then, I can just add "&lt; &gt;!" The most important thing that'll get you
+        well with HTML is knowing the <strong>skeleton and structure of html,</strong>
+        and how it interacts with CSS and JavaScript.
+    </p>
+    <br>
+    <p>Let's expand the acronym of what we're going to be working on.</p>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML = Hypertext Markup Language</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS = Cascading Style Sheets</a> </li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS = JavaScript</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website">An
+            extra link on
+            getting started with your first website.
+        </a></li>
+    <p>Why these acronyms? I don't know. You can check out the hyperlinks above,
+        the Mozilla Foundation provides great documentation.</p>
+    <p>Before I go over headings, I'd like to explain about HTML documents and their
+        basic structures. Every HTML's basic structure consists of <strong>HTML, CSS, and JS.</strong>
+        It is put into a folder and read by the browser. Here's a short, <u>concise</u> explanation
+        of the three different files:
+    </p>
+    <ol>
+        <li>index.html</li>
+        <details>This is the the instructions on how to manage the CSS and JS. The HTML resides here.</details>
+        <li>style.css</li>
+        <details>This file is the way you would style your HTML to make it all pretty and dandy.</details>
+        <li>script.js</li>
+        <details>This explains the mechanics behind the features of the UI, the 'brains'
+            of the website &lpar;not technically speaking!&rpar; Without this,
+            this website would just be a one big fat decoration.
+        </details>
+    </ol>
+    <h1>This is &lt;h1&gt; the largest heading!</h1>
+    <h2>This is &lt;h2&gt; the second largest heading.</h2>
+    <h3>This is h3..</h3>
+    <h4>h4, here we go...</h4>
+    <h5>h5, and once again, here we go....</h5>
+    <h6>This is the smallest heading, &lt;h6&gt;!</h6>
+    <p>How do I center a div.</p>
+    <div>Block 1</div>
+    <div>Block 2</div>
+    <div>Block 3</div>
+    <div>So, div is a Block-level element.
+        Think of div as a container box that stacks vertically with other boxes.
+    </div>
+    <span>This is span, what is an inline element.
+        Think of span as a way to wrap part of a line without disrupting the flow.
+    </span>
+    <br>
+    <span>Inline 1</span>
+    <span>Inline 2</span>
+    <span>Inline 3</span>
+    <br>
+    <p><big>Key</big> takwaway:
+        Block elements like div and p start on new lines.
+        Inline elements (like span, a) <small>flow</small> with text.
+    </p>
+    <br>
+    <h2><strong>Attributes</strong></h2>
+    <p>Tags can have <del>oops</del> attributes that provide <mark>extra</mark> information:</p>
+    <ul>
+        <li>(class="my-class" for styling multiple elements)</li>
+        <li>(id="unique-id" for one specific elements)</li>
+        <li>(style="color: red;" for inline CSS)</li>
+        <li>(href, src, alt as shown above)</li>
+    </ul>
+    <h2><strong>Semantic HTML</strong></h2>
+    <p>Modern HTML uses meaningful tags:</p>
+    <ul>
+        <li>(&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt; for page structure)</li>
+        <li>(&lt;article&gt;, &lt;section&gt; for content areas)</li>
+        <li>(&lt;button&gt; for clickable buttons)</li>
+        <li>(&lt;form&gt;, &lt;input&gt;, &lt;label&gt; for user input)</li>
+    </ul>
+
+    <button id='buttonOne'>Click Button #1</button>
+    <script src="script.js"></script>
+    <h1>Wow look at this</h1>
+
+    <form action="/submit" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Submit</button>
+        <br>
+
+        <body>
+            <audio controls autoplay loop muted src="/audio/time-to-say-goodbye.mp3"></audio>
+            <source src="/audio/time-to-say-goodbye.mp3">
+            <!-- <source src="/audio/time-to-say-goodbye.wav"> -->
+            This browser does not support HTML5 :&lpar; (or just blocking this LAWL.)
+        </body>
+        <br>
+
+        <body>
+            <video controls autoplay muted src="/video/file_example_MP4_480_1_5MG.mp4" width="600"></video>
+            <source src="/video/file_example_MP4_480_1_5MG.WebM">
+            This browser does not support HTML5.
+        </body>
+    </form>
+</body>
+
+</html>
